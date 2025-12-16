@@ -95,8 +95,14 @@
             animation: fadeUp 1s ease forwards;
             animation-delay: 1.2s;
         }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
 
 
 
@@ -139,12 +145,10 @@
             </p>
 
             <div class="d-flex gap-3">
-                <a href="#contato" class="btn btn-primary btn-lg">
+                <a href="https://wa.me/556484266591?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
+                   class="btn btn-primary btn-lg"
+                   target="_blank">
                     Solicite um orçamento
-                </a>
-
-                <a href="https://wa.me/556484266591" class="btn btn-success btn-lg">
-                    WhatsApp
                 </a>
             </div>
         </div>
@@ -183,25 +187,27 @@
         </div>
     </div>
 </section>
-
 <!-- SERVIÇOS -->
 <section id="servicos" class="py-5 bg-light">
     <div class="container">
         <h2 class="section-title">Serviços</h2>
+
         <div class="row g-4">
+
+            <!-- Linha 1 -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="imagens/imagem03.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Aluguel de máquinas</h5>
+                    <img src="imagens/imagem03.jpg" class="card-img-top" alt="Aluguel de máquinas">
+                    <div class="card-body text-center">
+                        <h5>Aluguel de Máquinas</h5>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="imagens/imagem04.jpg" class="card-img-top">
-                    <div class="card-body">
+                    <img src="imagens/imagem04.jpg" class="card-img-top" alt="Redes de água e esgoto">
+                    <div class="card-body text-center">
                         <h5>Redes de Água e Esgoto</h5>
                     </div>
                 </div>
@@ -209,16 +215,18 @@
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="imagens/imagem06.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Rede de drenagem urbana</h5>
+                    <img src="imagens/imagem06.jpg" class="card-img-top" alt="Drenagem urbana">
+                    <div class="card-body text-center">
+                        <h5>Rede de Drenagem Urbana</h5>
                     </div>
                 </div>
+            </div>
 
+            <!-- Linha 2 -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="imagens/imagem04.jpg" class="card-img-top">
-                    <div class="card-body">
+                    <img src="imagens/imagem04.jpg" class="card-img-top" alt="Construção civil">
+                    <div class="card-body text-center">
                         <h5>Construção Civil em Geral</h5>
                     </div>
                 </div>
@@ -226,12 +234,22 @@
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="imagens/imagem05.jpg" class="card-img-top">
-                    <div class="card-body">
+                    <img src="imagens/imagem05.jpg" class="card-img-top" alt="Pavimentação e meio-fio">
+                    <div class="card-body text-center">
                         <h5>Pavimentação e Meio-Fio</h5>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="imagens/imagem02.jpg" class="card-img-top" alt="Saneamento básico">
+                    <div class="card-body text-center">
+                        <h5>Saneamento Básico</h5>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
