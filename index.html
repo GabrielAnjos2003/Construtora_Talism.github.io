@@ -259,17 +259,54 @@
 
 
 <!-- PORTFÓLIO -->
-<section id="portfolio" class="py-5">
+<section id="portfolio" class="py-5 bg-light">
     <div class="container">
-        <h2 class="section-title">Portfólio</h2>
-        <div class="row g-4">
-            <div class="col-md-4"><img src="imagens/imagem01.jpg" class="img-fluid rounded"></div>
-            <div class="col-md-4"><img src="imagens/imagem02.jpg" class="img-fluid rounded"></div>
-            <div class="col-md-4"><img src="imagens/imagem06.jpg" class="img-fluid rounded"></div>
-            <div class="col-md-4"><img src="imagens/imagem03.jpg" class="img-fluid rounded"></div>
+        <h2 class="section-title text-center mb-4">Portfólio</h2>
+
+        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- INDICADORES -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- IMAGENS -->
+            <div class="carousel-inner rounded shadow">
+
+                <div class="carousel-item active">
+                    <img src="imagens/imagem01.jpg" class="d-block w-100" alt="Obra de saneamento">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/imagem02.jpg" class="d-block w-100" alt="Infraestrutura urbana">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/imagem06.jpg" class="d-block w-100" alt="Drenagem urbana">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/imagem03.jpg" class="d-block w-100" alt="Execução de obra">
+                </div>
+
+            </div>
+
+            <!-- CONTROLES -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
         </div>
     </div>
 </section>
+
 
 <!-- DEPOIMENTOS -->
 <section id="depoimentos" class="py-5">
