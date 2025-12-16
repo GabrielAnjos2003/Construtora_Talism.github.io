@@ -5,12 +5,22 @@
     <title>Construtora Talismã</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- SEO -->
+    <meta name="description" content="Construtora Talismã atua com saneamento básico, redes de água e esgoto, pavimentação, meio-fio e obras de infraestrutura.">
+    <meta name="keywords" content="Construtora Talismã, saneamento básico, rede de água, rede de esgoto, pavimentação, Catalão">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: rgba(10, 31, 68, 0.95);
         }
 
         /* HERO */
@@ -18,18 +28,16 @@
             position: relative;
             min-height: 90vh;
             background: url("imagens/imagem01.jpg") center/cover no-repeat;
-            color: #fff;
+            color: #ffffff;
         }
 
-        /* Overlay escuro */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.65);
+            background: rgba(10, 31, 68, 0.75);
         }
 
-        /* Faixa diagonal */
         .hero::after {
             content: "";
             position: absolute;
@@ -37,7 +45,7 @@
             right: -30%;
             width: 60%;
             height: 100%;
-            background: rgba(255, 140, 0, 0.85);
+            background: rgba(13, 110, 253, 0.85);
             transform: skewX(-20deg);
         }
 
@@ -46,29 +54,14 @@
             z-index: 2;
         }
 
-        .hero h1 {
-            color: #ff8c00;
-            font-weight: 700;
+        .section-title {
+            border-left: 6px solid #0d6efd;
+            padding-left: 15px;
+            margin-bottom: 30px;
         }
 
-        .breadcrumb-custom {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        .btn-orange {
-            background-color: #ff8c00;
-            color: #000;
-            font-weight: 600;
-        }
-
-        .btn-orange:hover {
-            background-color: #e67600;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: rgba(0,0,0,0.85);
+        footer {
+            background-color: #0a1f44;
         }
     </style>
 </head>
@@ -86,7 +79,7 @@
 
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#empresa">Quem Somos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Projetos</a></li>
@@ -97,40 +90,29 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero d-flex align-items-center">
+<section id="inicio" class="hero d-flex align-items-center">
     <div class="container hero-content">
-        <div class="row">
-            <div class="col-lg-7">
+        <div class="col-lg-7">
+            <h1 class="display-6 fw-bold mb-3">
+                Infraestrutura e Saneamento Básico
+            </h1>
 
-                <h1 class="display-6 mb-3">
-                    Infraestrutura e Saneamento Básico
-                </h1>
+            <p class="mb-4">
+                Construção civil, redes de água e esgoto, pavimentação, meio-fio e obras urbanas.
+            </p>
 
-                <p class="breadcrumb-custom mb-4">
-                    Home &nbsp;›&nbsp; Serviços &nbsp;›&nbsp;
-                    <strong>Construção Civil e Obras Urbanas</strong>
-                </p>
+            <div class="d-flex gap-3">
+                <a href="#contato" class="btn btn-primary btn-lg">
+                    Solicite um orçamento
+                </a>
 
-                <div class="d-flex gap-3">
-                    <a href="#contato" class="btn btn-orange btn-lg">
-                        Solicite um orçamento
-                    </a>
-
-                    <a href="https://wa.me/55SEUNUMERO" class="btn btn-success btn-lg">
-                        Chame no WhatsApp
-                    </a>
-                </div>
-
+                <a href="https://wa.me/556484266591" class="btn btn-success btn-lg">
+                    WhatsApp
+                </a>
             </div>
         </div>
     </div>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-
 
 <!-- EMPRESA -->
 <section id="empresa" class="py-5">
@@ -140,24 +122,21 @@
             <div class="col-md-6">
                 <p>
                     A <strong>Construtora Talismã</strong> atua no setor da construção civil com foco em
-                    <strong>saneamento básico, infraestrutura urbana e obras públicas e privadas</strong>.
-                    Executamos serviços com qualidade técnica, responsabilidade ambiental e compromisso
-                    com prazos e normas.
+                    saneamento básico, infraestrutura urbana e obras públicas e privadas.
                 </p>
 
                 <h5>Missão</h5>
-                <p>Executar obras com excelência, segurança e eficiência, contribuindo para o desenvolvimento urbano e a qualidade de vida da população.</p>
+                <p>Executar obras com excelência, segurança e eficiência.</p>
 
                 <h5>Visão</h5>
-                <p>Ser referência regional em obras de infraestrutura e saneamento básico.</p>
+                <p>Ser referência regional em obras de infraestrutura.</p>
 
                 <h5>Valores</h5>
                 <ul>
                     <li>Qualidade técnica</li>
                     <li>Responsabilidade ambiental</li>
                     <li>Compromisso com prazos</li>
-                    <li>Ética e transparência</li>
-                    <li>Segurança no trabalho</li>
+                    <li>Ética e segurança</li>
                 </ul>
             </div>
 
@@ -171,39 +150,34 @@
 <!-- SERVIÇOS -->
 <section id="servicos" class="py-5 bg-light">
     <div class="container">
-        <h2 class="section-title">Nossos Serviços</h2>
+        <h2 class="section-title">Serviços</h2>
         <div class="row g-4">
-
             <div class="col-md-4">
-                <div class="card servico-card h-100">
+                <div class="card h-100">
                     <img src="imagens/imagem03.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Saneamento Básico</h5>
-                        <p class="card-text">Execução de sistemas de abastecimento de água e esgotamento sanitário.</p>
+                        <h5>Saneamento Básico</h5>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card servico-card h-100">
+                <div class="card h-100">
                     <img src="imagens/imagem04.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Redes de Água e Esgoto</h5>
-                        <p class="card-text">Implantação, ampliação e manutenção de redes hidráulicas e sanitárias.</p>
+                        <h5>Redes de Água e Esgoto</h5>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card servico-card h-100">
+                <div class="card h-100">
                     <img src="imagens/imagem05.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Pavimentação Urbana</h5>
-                        <p class="card-text">Execução de pavimentação, meio-fio, sarjetas e drenagem superficial.</p>
+                        <h5>Pavimentação e Meio-Fio</h5>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -211,21 +185,11 @@
 <!-- PORTFÓLIO -->
 <section id="portfolio" class="py-5">
     <div class="container">
-        <h2 class="section-title">Portfólio de Obras</h2>
+        <h2 class="section-title">Portfólio</h2>
         <div class="row g-4">
-
-            <div class="col-md-4">
-                <img src="imagens/imagem01.jpg" class="img-fluid rounded">
-            </div>
-
-            <div class="col-md-4">
-                <img src="imagens/imagem02.jpg" class="img-fluid rounded">
-            </div>
-
-            <div class="col-md-4">
-                <img src="imagens/imagem06.jpg" class="img-fluid rounded">
-            </div>
-
+            <div class="col-md-4"><img src="imagens/imagem01.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-4"><img src="imagens/imagem02.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-4"><img src="imagens/imagem06.jpg" class="img-fluid rounded"></div>
         </div>
     </div>
 </section>
@@ -234,20 +198,17 @@
 <section id="contato" class="py-5 bg-light">
     <div class="container text-center">
         <h2 class="section-title">Contato</h2>
-        <p>Entre em contato para orçamentos e informações técnicas.</p>
-
-        <a href="https://wa.me/55SEUNUMERO" class="btn btn-success btn-lg">
-            WhatsApp
-        </a>
+        <p><strong>Telefone / WhatsApp:</strong> +55 (64) 98426-6591</p>
+        <p><strong>E-mail:</strong> fernandomar.borges@gmail.com</p>
+        <a href="https://wa.me/556484266591" class="btn btn-success btn-lg">Chamar no WhatsApp</a>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="text-white text-center py-3">
-    <p class="mb-0">© 2025 – Construtora Talismã | Todos os direitos reservados</p>
+    © 2025 – Construtora Talismã
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
