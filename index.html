@@ -3,48 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Construtora Talismã</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO básico -->
-    <meta name="description" content="Construtora Talismã atua em saneamento básico, redes de água e esgoto, pavimentação, meio-fio, bocas de lobo e obras de infraestrutura.">
-    <meta name="keywords" content="Construtora Talismã, saneamento básico, rede de esgoto, rede de água, pavimentação, meio-fio, boca de lobo">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
-            scroll-behavior: smooth;
+            margin: 0;
         }
 
+        /* HERO */
         .hero {
-            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-                        url("imagens/imagem01.jpg") center/cover no-repeat;
-            height: 90vh;
-            color: white;
+            position: relative;
+            min-height: 90vh;
+            background: url("imagens/imagem01.jpg") center/cover no-repeat;
+            color: #fff;
         }
 
-        .hero img {
-            max-width: 120px;
+        /* Overlay escuro */
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
         }
 
-        .section-title {
-            border-left: 6px solid #0d6efd;
-            padding-left: 15px;
-            margin-bottom: 30px;
+        /* Faixa diagonal */
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -30%;
+            width: 60%;
+            height: 100%;
+            background: rgba(255, 140, 0, 0.85);
+            transform: skewX(-20deg);
         }
 
-        .servico-card {
-            transition: transform .3s;
+        .hero-content {
+            position: relative;
+            z-index: 2;
         }
 
-        .servico-card:hover {
-            transform: translateY(-5px);
+        .hero h1 {
+            color: #ff8c00;
+            font-weight: 700;
         }
 
-        footer {
-            background: #111;
+        .breadcrumb-custom {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .btn-orange {
+            background-color: #ff8c00;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .btn-orange:hover {
+            background-color: #e67600;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(0,0,0,0.85);
         }
     </style>
 </head>
@@ -52,18 +76,20 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Construtora Talismã</a>
+        <a class="navbar-brand fw-bold" href="#">Construtora Talismã</a>
+
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="menu" class="collapse navbar-collapse">
+
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#empresa">Quem Somos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
         </div>
@@ -71,14 +97,40 @@
 </nav>
 
 <!-- HERO -->
-<section id="inicio" class="hero d-flex align-items-center">
-    <div class="container text-center">
-        <img src="imagens/Diamante azul.webp" alt="Construtora Talismã" class="mb-4">
-        <h1 class="display-5 fw-bold">Construtora Talismã</h1>
-        <p class="lead">Infraestrutura • Saneamento Básico • Obras Urbanas</p>
-        <a href="#contato" class="btn btn-primary btn-lg mt-3">Solicitar Orçamento</a>
+<section class="hero d-flex align-items-center">
+    <div class="container hero-content">
+        <div class="row">
+            <div class="col-lg-7">
+
+                <h1 class="display-6 mb-3">
+                    Infraestrutura e Saneamento Básico
+                </h1>
+
+                <p class="breadcrumb-custom mb-4">
+                    Home &nbsp;›&nbsp; Serviços &nbsp;›&nbsp;
+                    <strong>Construção Civil e Obras Urbanas</strong>
+                </p>
+
+                <div class="d-flex gap-3">
+                    <a href="#contato" class="btn btn-orange btn-lg">
+                        Solicite um orçamento
+                    </a>
+
+                    <a href="https://wa.me/55SEUNUMERO" class="btn btn-success btn-lg">
+                        Chame no WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
 
 <!-- EMPRESA -->
 <section id="empresa" class="py-5">
