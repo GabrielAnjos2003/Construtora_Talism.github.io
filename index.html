@@ -24,37 +24,40 @@
         }
 
         /* HERO */
-        .hero {
-            position: relative;
-            min-height: 85vh;
-            background: url("imagens/imagem01.jpg") center/cover no-repeat;
-            color: #ffffff;
-        }
+            .hero {
+        position: relative;
+        min-height: 85vh;
+        background: url("imagens/imagem01.jpg") center/cover no-repeat;
+        color: #ffffff;
+        overflow: hidden;
+    }
 
-        .hero::before {
-            background: rgba(30, 90, 170, 0.65); /* azul claro translúcido */
-        }
+    /* Overlay escuro */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(30, 90, 170, 0.65);
+        z-index: 1;
+    }
 
-        .hero::after {
-            background: rgba(45, 130, 255, 0.85); /* azul claro da faixa */
-        }
+    /* Faixa diagonal */
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -30%;
+        width: 60%;
+        height: 100%;
+        background: rgba(13, 110, 253, 0.85);
+        transform: skewX(-20deg);
+        z-index: 1;
+    }
 
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: -30%;
-            width: 60%;
-            height: 100%;
-            background: rgba(13, 110, 253, 0.85);
-            transform: skewX(-20deg);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
 
         .section-title {
             border-left: 6px solid #5080c7;
@@ -130,7 +133,8 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#empresa">Quem Somos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
         </div>
@@ -142,7 +146,7 @@
     <div class="container hero-content">
         <div class="col-lg-7">
             <h1 class="display-6 fw-bold mb-3">
-                Infraestrutura e Saneamento Básico
+                Infraestrutura, Construção Civil e Saneamento Básico
             </h1>
 
             <p class="mb-4">
