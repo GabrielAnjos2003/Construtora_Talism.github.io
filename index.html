@@ -89,6 +89,30 @@
         z-index: 2;
     }
 
+
+    .hero-logo {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    z-index: 2;
+    }
+
+    .hero-logo img {
+        max-width: 180px;
+        width: 100%;
+        opacity: 0.95;
+    }
+
+    @media (max-width: 991px) {
+        .hero-logo {
+            display: none;
+        }
+    }
+
+
+
+
     .section-title {
         border-left: 6px solid var(--azul-claro);
         padding-left: 15px;
@@ -151,26 +175,31 @@
 <section id="inicio" class="hero d-flex align-items-center">
     <div class="container hero-content">
         <div class="col-lg-7">
-    <h1 class="display-6 fw-bold mb-3 animate-title">
-        Infraestrutura, Construção Civil e Saneamento
-    </h1>
+            <h1 class="display-6 fw-bold mb-3 animate-title">
+                Infraestrutura, Construção Civil e Saneamento
+            </h1>
 
-    <p class="mb-4 animate-text">
-        Executamos obras de saneamento básico, infraestrutura e construção civil
-        com qualidade, segurança e compromisso, com mais de 15 anos de experiência.
-    </p>
+            <p class="mb-4 animate-text">
+                Executamos obras de saneamento básico, infraestrutura e construção civil
+                com qualidade, segurança e compromisso, com mais de 15 anos de experiência.
+            </p>
 
-    <div class="d-flex gap-3 animate-buttons">
-        <a href="https://wa.me/556484266591?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20uma%20obra."
-           class="btn btn-primary btn-lg"
-           target="_blank">
-            SOLICITAR ORÇAMENTO
-        </a>
+            <div class="d-flex gap-3 animate-buttons">
+                <a href="https://wa.me/556484266591?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20uma%20obra."
+                   class="btn btn-primary btn-lg"
+                   target="_blank">
+                    SOLICITAR ORÇAMENTO
+                </a>
+            </div>
+        </div>
     </div>
-</div>
 
+    <!-- LOGO NA FAIXA AZUL DA DIREITA -->
+    <div class="hero-logo">
+        <img src="imagens/Diamante_azulgg.png" alt="Construtora Talismã">
     </div>
 </section>
+
 
 <!-- EMPRESA -->
 <section id="empresa" class="py-5">
