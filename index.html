@@ -45,9 +45,14 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(6, 94, 247, 0.94);
+        background: linear-gradient(
+            135deg,
+            rgba(148, 187, 245, 0.55),
+            rgba(6, 94, 247, 0.55)
+        );
         z-index: 1;
     }
+
 
     .hero::after {
         content: "";
@@ -180,7 +185,7 @@
             </div>
 
             <!-- mapa de localização da empresa -->
-             
+
             <div class="col-md-6">
                 <div class="ratio ratio-16x9 rounded shadow">
                     <iframe
